@@ -1,6 +1,5 @@
 #include <iostream>
 #include <windows.h>
-#include <time.h>
 
 using namespace std;
 
@@ -31,7 +30,7 @@ int main() {
     const int N = 10;
     int a[N];
 
-    cout << "Массив: \n";
+    cout << "Масив: \n";
     for (int i = 0; i < N; i++) {
         a[i] = rand() % 20;
         cout << a[i] << " ";
@@ -40,12 +39,11 @@ int main() {
 
     quickSort(a, 0, N - 1);
 
-    cout << "Отсортированный массив: \n";
+    cout << "Відсортований масив: \n";
     for (int i = 0; i < N; i++) {
         cout << a[i] << " ";
     }
     cout << endl;
 
-    system("pause");
     return 0;
 }
